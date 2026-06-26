@@ -442,6 +442,7 @@ h3 {
 .feature-grid h3 {
   color: var(--gold-soft);
   font-size: 1rem;
+  grid-column: 2;
   letter-spacing: 0.12em;
   margin-bottom: 10px;
   text-transform: uppercase;
@@ -449,6 +450,7 @@ h3 {
 
 .feature-grid p {
   color: rgba(255, 255, 255, 0.72);
+  grid-column: 2;
   line-height: 1.7;
   margin-bottom: 0;
 }
@@ -742,12 +744,17 @@ details p {
   }
 
   .feature-grid article {
-    grid-template-columns: 44px 1fr;
+    grid-template-columns: 1fr;
   }
 
   .feature-grid article > span {
     font-size: 1.1rem;
     height: 44px;
     width: 44px;
+  }
+
+  .feature-grid h3,
+  .feature-grid p {
+    grid-column: 1;
   }
 }
