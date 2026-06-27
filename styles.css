@@ -657,22 +657,22 @@ h3 {
   background: #141414;
 }
 
-.sizing-grid {
-  display: grid;
-  gap: 16px;
-  grid-template-columns: repeat(3, 1fr);
-  margin-top: 42px;
-}
-
-.sizing-grid div {
+.sizing-card {
   border: 1px solid var(--line);
-  padding: 26px;
+  margin-top: 56px;
+  max-width: 900px;
+  padding: clamp(26px, 5vw, 44px);
 }
 
-.sizing-grid p {
+.sizing-card p {
   color: var(--muted);
-  line-height: 1.65;
-  margin-bottom: 0;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 22px;
+}
+
+.sizing-card .btn {
+  margin-top: 10px;
 }
 
 .quote-section {
@@ -886,8 +886,7 @@ details p {
   }
 
   .product-grid,
-  .feature-grid,
-  .sizing-grid {
+  .feature-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -935,8 +934,7 @@ details p {
   }
 
   .product-grid,
-  .feature-grid,
-  .sizing-grid {
+  .feature-grid {
     grid-template-columns: 1fr;
   }
 
