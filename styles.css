@@ -558,6 +558,32 @@ h3 {
   color: var(--charcoal);
 }
 
+.curve-note {
+  background: #f4efe6;
+  border-left: 3px solid var(--gold);
+  margin-top: 18px;
+  padding: 20px;
+}
+
+.curve-note h4 {
+  color: var(--charcoal);
+  font-size: 0.9rem;
+  letter-spacing: 0.12em;
+  margin: 0 0 10px;
+  text-transform: uppercase;
+}
+
+.curve-note p {
+  margin-bottom: 10px;
+}
+
+.curve-note a {
+  color: #8b641d;
+  font-weight: 850;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .app-panel {
   background: #111111;
   color: #ffffff;
